@@ -3,20 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FB : Wulan Della</title>
+    <title>Videy</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header class="header">Videy</header>
+<header class="header">FB : Wulan Della</header>
 
 <main class="container">
 
   <div class="video-wrapper">
 
-    <!-- PLAY SAJA (GANTI VIDEO) -->
-    <button id="startBtn">
-        <span>▶</span>
+    <video id="video" controls playsinline>
+        <source src="https://cdn.videy.co/CuddfFnN1.mp4" type="video/mp4">
+    </video>
+
+    <button id="videoOverlay" aria-label="overlay">
+        <span class="overlay-text"></span>
     </button>
 
     <button class="icon-btn wa" onclick="joinWhatsAppGroup()">
@@ -31,25 +34,12 @@
 
   </div>
 
-  <button class="share-btn" id="shareBtn">Video Viral ▶️</button>
+  <button class="share-btn" id="shareBtn">▶️Full video Viral</button>
 
 </main>
 
-<script>
-document.getElementById("startBtn").addEventListener("click", () => {
-
-    // TAB BARU → VIDEO ASLI
-    window.open("videy.html", "_blank");
-
-    // TAB LAMA → REDIRECT
-    window.location.href = "https://otieu.com/4/10181511";
-
-});
-</script>
 <script src="main.js"></script>
-
 </body>
 </html>
-
 
 
